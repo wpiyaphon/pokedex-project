@@ -10,7 +10,11 @@ export default function Navbar({ currentPage }: NavbarProps) {
   const navigation = [
     { name: "Home", href: "#", current: currentPage === "Home" },
     { name: "Pokedex", href: "#", current: currentPage === "Pokedex" },
-    { name: "Repository", href: "https://github.com/wpiyaphon/pokedex-project", current: false },
+    {
+      name: "Repository",
+      href: "https://github.com/wpiyaphon/pokedex-project",
+      current: false,
+    },
   ];
 
   function classNames(...classes: string[]) {
@@ -22,7 +26,7 @@ export default function Navbar({ currentPage }: NavbarProps) {
     <Disclosure as="nav">
       {({ open }) => (
         <>
-          <div className="mx-auto pt-4 max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl px-2 pt-4 sm:px-6 lg:px-8">
             <div className="relative flex h-20 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
@@ -48,7 +52,7 @@ export default function Navbar({ currentPage }: NavbarProps) {
                     alt="Pokedex logo"
                   />
                   <div className="ml-4">
-                    <div className="text-sm font-regular leading-none mt-1 text-white">
+                    <div className="font-regular mt-1 text-sm leading-none text-white">
                       Pokedex
                     </div>
                     <div className="text-2xl font-bold text-red-main">
@@ -57,7 +61,7 @@ export default function Navbar({ currentPage }: NavbarProps) {
                   </div>
                 </div>
                 <div className="hidden sm:ml-6 sm:block sm:justify-end">
-                  <div className="flex space-x-4 mt-1.5">
+                  <div className="mt-1.5 flex space-x-4">
                     {navigation.map((item) => (
                       <a
                         key={item.name}
