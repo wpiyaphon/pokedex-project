@@ -1,5 +1,5 @@
-import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Disclosure } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import logo from "../assets/logo.png";
 
 interface NavbarProps {
@@ -8,8 +8,8 @@ interface NavbarProps {
 
 export default function Navbar({ currentPage }: NavbarProps) {
   const navigation = [
-    { name: "Home", href: "#", current: currentPage === "Home" },
-    { name: "Pokedex", href: "#", current: currentPage === "Pokedex" },
+    { name: "Home", href: "/", current: currentPage === "Home" },
+    { name: "Pokedex", href: "/pokedex", current: currentPage === "Pokedex" },
     {
       name: "Repository",
       href: "https://github.com/wpiyaphon/pokedex-project",

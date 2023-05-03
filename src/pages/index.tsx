@@ -1,11 +1,10 @@
 import Head from "next/head";
 import Navbar from "@/components/Navbar";
 import pokedexImage from "@/assets/pokedex_image.png";
-import gitHubImage from "@/assets/gitHub_image.png";
 
 export default function Home() {
   return (
-    <div className="h-full min-h-screen w-screen bg-gradient-to-br from-[#474747] to-[#222222]">
+    <div>
       <Head>
         <title>Pokedex Project</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
