@@ -10,7 +10,7 @@ export default function Home() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Navbar currentPage={"Home"} />
-      <div className="mx-auto max-w-7xl px-2 py-10 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-2 py-10 sm:px-6 lg:px-8 lg:mt-2">
         <div className="grid space-y-5 sm:grid-cols-2 sm:gap-6">
           <div className="col-span-1">
             <div className="text-center text-4xl font-bold leading-snug text-white sm:text-left sm:text-6xl">
@@ -47,7 +47,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="col-span-1 hidden space-x-24 pt-6 text-white md:flex">
+          <div className="col-span-1 hidden space-x-24 text-white md:flex md:pt-3">
             <div className="text-4xl">
               <span className="font-bold">1k</span>
               <span className="text-red-main">+</span>
